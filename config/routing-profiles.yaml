@@ -1,0 +1,13 @@
+profiles:
+  cheap-deepseek:
+    cheap: [mock/mock-model, deepseek/deepseek-chat]
+    standard: [mock/mock-model, deepseek/deepseek-chat, openai/gpt-4o-mini]
+    strong: [mock/mock-model, openai/gpt-4o-mini]
+  balanced:
+    cheap: [mock/mock-model, openai/gpt-4o-mini]
+    standard: [mock/mock-model, openai/gpt-4o-mini, deepseek/deepseek-chat]
+    strong: [mock/mock-model, openai/gpt-4o-mini]
+  openai-heavy:
+    cheap: [openai/gpt-4o-mini]
+    standard: [openai/gpt-4o-mini]
+    strong: [openai/gpt-4o-mini]

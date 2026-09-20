@@ -1,0 +1,14 @@
+currency: USD
+models:
+  openai/gpt-4o-mini:
+    input: 0.15
+    cached_input: 0.075
+    output: 0.60
+  deepseek/deepseek-chat:
+    input: 0.14
+    cached_input: 0.014
+    output: 0.28
+  mock/mock-model:
+    input: 0.0
+    cached_input: 0.0
+    output: 0.0

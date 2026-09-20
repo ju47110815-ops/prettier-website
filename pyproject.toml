@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "website-migration-engine"
+version = "0.1.0"
+description = "Provider-agnostic local AI website migration engine"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.110",
+  "pydantic>=2.0",
+  "PyYAML>=6.0",
+  "httpx>=0.25",
+  "uvicorn>=0.27",
+  "openai>=1.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend"]
+testpaths = ["backend/tests"]
+
+[tool.setuptools.packages.find]
+where = ["backend"]

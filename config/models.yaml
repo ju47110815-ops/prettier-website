@@ -1,0 +1,19 @@
+models:
+  - provider: mock
+    model: mock-model
+    tier: cheap
+    capabilities: [structured_output, json_output, tool_calling]
+    context_size: 32000
+    max_output: 8192
+  - provider: deepseek
+    model: deepseek-chat
+    tier: standard
+    capabilities: [structured_output, json_output, tool_calling]
+    context_size: 64000
+    max_output: 8192
+  - provider: openai
+    model: gpt-4o-mini
+    tier: standard
+    capabilities: [structured_output, json_output, tool_calling]
+    context_size: 128000
+    max_output: 16384
